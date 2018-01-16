@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'ChunkFiveEx';
+    src: url('../fonts/ChunkFiveEx.ttf') format('truetype');
+}
+
+.site {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px auto;
+    grid-template-areas:
+        "header header"
+        "main main";
+    height: 100vh;
+}
+
+.menu {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(99, 1, 0);
+}
+
+.menu>a {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    font-family: 'ChunkFiveEx';
+    font-size: 24px;
+    color: white;
+
+}
+
+.main-content {
+    grid-area: main;
+    background-color: rgba(255,255,255,0.5);
+    width: 80%;
+    margin: 0 10%;
+}
+
+article {
+    padding: 0 20px;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/studio01.jpg');
+}
+
+html {
+    height: 100%;
+}
