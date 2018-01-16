@@ -37,6 +37,7 @@
     background-image: url('../images/menu_bg.svg');
     background-repeat: no-repeat;
     background-position: 15px 10px;
+    text-decoration: none;
 }
 
 .menu>a.active, .menu>a:hover {
