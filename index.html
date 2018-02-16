@@ -7,6 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>D&D Fotó- és Grafikai Stúdió</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+
+    <script src="assets/scripts/jquery.min.js"></script>
+    <script src="assets/scripts/slick.min.js"></script>
+    <script>
+        $(document)
+            .ready(function () {
+                $('.fade').slick({
+                    adaptiveHeight: false,
+                    dots: false,
+                    infinite: true,
+                    speed: 800,
+                    fade: false,
+                    cssEase: 'linear',
+                    arrows: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    autoplay: true,
+                    autoplaySpeed: 5000,
+                });
+
+                $('.slidenavleft').on('click', function(){
+                    $('.fade').slick("slickPrev");
+                });
+                $('.slidenavright').on('click', function(){
+                    $('.fade').slick("slickNext");
+                });
+            });
+    </script>
 </head>
 
 <body>
@@ -43,7 +72,7 @@
                 </p>
                 <p></p>
 
-                <ul>
+                <!-- <ul>
                     <li>Fotóst bérelnél egy esküvőre, családi eseményre, vagy akár csak egy kiruccanásra?</li>
                     <li>Fényképet szeretnél egy hivatalos iratodra, vagy gyerekfotót a családi albumba?</li>
                     <li>Hiányzik valami felszerelés a kezdő/profi cuccaid közül? Utángyártot, vagy eredeti?</li>
@@ -52,8 +81,89 @@
                         Nyomtatni vagy akár cégarculatot szeretnél terveztetni, de nem tudod hol kezdd el? <br>
                         A legjobb helyen vagy! Nálunk mindezt, és még sok minden mást is megtalálsz!
                     </li>
-                </ul>
+                </ul> -->
             </article>
+
+            <div class="slider">
+                <div class="container">
+                    <div class="contents">
+                        <div class="slidenavleft"></div>
+                        <div class="fade">
+                            <div class="slide">
+                                <img class="ui fluid image" src="assets/images/Slide1.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img class="ui fluid image" src="assets/images/Slide2.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img class="ui fluid image" src="assets/images/Slide3.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img class="ui fluid image" src="assets/images/Slide4.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img class="ui fluid image" src="assets/images/Slide5.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img class="ui fluid image" src="assets/images/Slide6.png" alt="">
+                            </div>
+                        </div>
+                        <div class="slidenavright"></div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="container">
+                    <div class="contents">
+                        <div class="telefon">
+                            <div class="ikon">
+                                <img src="assets/images/viber.png" alt="Viber"> 
+                                <img src="assets/images/whatsapp.png" alt="Whatsapp"> 
+                                <img src="assets/images/telefon.png" alt="Telefon"> 
+                                <img src="assets/images/skype.png" alt="Skype"> 
+                            </div>
+                            <div class="szoveg">
+                                +36703090071
+                            </div>
+                        </div>
+                        <div class="facebook">
+                            <div class="ikon">
+                                <img src="assets/images/facebook.png" alt="Facebook">
+                            </div>
+                            <div class="szoveg">
+                                /D&D/
+                            </div>
+                        </div>
+                        <div class="email">
+                            <div class="ikon">
+                                <img src="assets/images/mail.png" alt="Email">
+                            </div>
+                            <div class="szoveg">
+                                dand@gmail.com
+                            </div>
+                        </div>
+                        <div class="instagram">
+                            <div class="ikon">
+                                <img src="assets/images/instagram.png" alt="Instagram">
+                            </div>
+                            <div class="szoveg">
+                                /dand/
+                            </div>
+                        </div>
+                        <div class="terkep">
+                            <div class="ikon">
+                                <img src="assets/images/terkep.png" alt="Terkep">
+                            </div>
+                            <div class="szoveg">
+                                7400 Kaposvar <br>
+                                Rippl-Ronai ter
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
         </main>
 
     </div>

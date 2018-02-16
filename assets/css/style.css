@@ -3,6 +3,19 @@
     src: url('../fonts/ChunkFiveEx.ttf') format('truetype');
 }
 
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/studio01.jpg');
+    font-family: 'ChunkFiveEx';
+    font-weight: 400;
+}
+
 .site {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -79,15 +92,84 @@ ul {
     padding-left: 100px;
 }
 
-body {
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: url('../images/studio01.jpg');
-    font-family: 'ChunkFiveEx';
-    font-weight: 400;
+.slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-html {
-    height: 100%;
+.slider > .container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.slider > .container > .contents {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fade {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fade > .slide, .slick-slide {
+    width: 50%;
+}
+
+.fade > .slide > img, .slick-slide > img {
+    width: 100%;
+}
+
+.slidenavleft {
+    background-image: url('../images/arrow_previous.png');
+    width: 5%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.slidenavright {
+    background-image: url('../images/arrow_next.png');
+    width: 5%;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer > .container {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer > .container > .contents {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,0.75);
+    padding: 20px;
+}
+
+.telefon > .szoveg, .facebook > .szoveg, .email > .szoveg, .instagram > .szoveg, .terkep > .szoveg {
+    text-align: center;
+}
+
+.ikon {
+    display: flex;
+    justify-content: center;
 }
