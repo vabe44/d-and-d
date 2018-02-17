@@ -11,9 +11,11 @@ body {
     min-height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url('../images/studio01.jpg');
+    background-image: url(../images/studio02.jpg);
     font-family: 'ChunkFiveEx';
+    background-position: bottom;
     font-weight: 400;
+    background-size: cover;
 }
 
 .site {
@@ -32,10 +34,13 @@ body {
     flex-direction: row;
     justify-content: space-between;
     /* flex-wrap: wrap; */
-    background-color: rgb(99, 1, 0);
+    /* background-color: rgb(99, 1, 0); */
+    background-image: url(../images/menubg.png);
     width: 80%;
     padding: 0 10%;
 }
+
+.menu::after
 
 .menu span {
     padding-left: 30px;
@@ -77,11 +82,13 @@ img#logo {
 
 .main-content {
     grid-area: main;
-    background-color: rgba(255,255,255,0.75);
+    /* background-color: rgba(255,255,255,0.75); */
+    background-image: url(../images/contentbg.png);
     width: 80%;
-    margin: 0 10%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    box-shadow: 20px 25px 25px 9px rgba(0, 0, 0, 0.6);
 }
 
 article {
@@ -120,11 +127,36 @@ ul {
 }
 
 .fade {
+    width: 100%;
+    position: absolute !important;
+    top: 0;
+}
+
+.fadecontainer {
     width: 90%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    position: relative;
 }
+
+.sliderglow {
+    position: relative;
+    z-index: 1;
+}
+
+.glow {
+    position: relative;
+    width: 100%;
+}
+
+/* .fade::before {
+    content: '';
+    background-image: url('../images/sliderglow.png');
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+} */
 
 .fade > .slide, .slick-slide {
     width: 50%;
@@ -178,6 +210,7 @@ footer > .container > .contents > .ikonok {
     flex-direction: row;
     justify-content: space-between;
     background-color: rgba(255,255,255,0.75);
+    box-shadow: 7px 5px 5px 0px rgba(0, 0, 0, 0.3)
 }
 
 .telefon, .facebook, .email, .instagram, .terkep {
