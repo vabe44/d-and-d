@@ -50,7 +50,7 @@ body {
 .menu>a {
     display: flex;
     flex-direction: column;
-    padding: 1.5em 15px 0 15px;
+    padding: 1em 15px 0 15px;
     font-size: 30px;
     color: white;
     background-image: url('../images/menu_bg.svg');
@@ -182,6 +182,12 @@ ul {
     background-size: contain;
 }
 
+.slidenavleft:hover, .slidenavright:hover, .kep.kov img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    /* margin-top: 2px; */
+}
+
 footer {
     display: flex;
     flex-direction: row;
@@ -229,4 +235,45 @@ footer > .container > .contents > .ikonok {
 
 .telefon > .szoveg, .facebook > .szoveg, .email > .szoveg, .instagram > .szoveg, .terkep > .szoveg {
     text-align: center;
+}
+
+/* SZOLGALTATASOK */
+/* SZOLGALTATASOK */
+/* SZOLGALTATASOK */
+
+.szolgaltatasok-container {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.szolgaltatasok {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 7px 5px 5px 0px rgba(0, 0, 0, 0.5)
+}
+
+.szolgaltatasok-container h1 {
+    margin: 10px 0;
+    font-family: sans-serif;
+}
+
+.szolg-kepek {
+    display: flex;
+}
+
+.szolg-kepek .kep {
+    padding: 5px;
+}
+
+.szolg-kepek .kep img {
+    width: 100%;
+}
+
+div.szolg-separator {
+    margin: 30px auto;
+    width: 95%;
+    height: 7px;
+    border-radius: 10px;
+    background-color: rgb(99, 1, 0);
 }
